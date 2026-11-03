@@ -1,0 +1,32 @@
+export const mockEvents = [
+  {
+    id: 1,
+    title: 'Campus Hackathon 2026',
+    category: 'Technology',
+    date: 'NOV 05',
+    time: '9:00 AM',
+    location: 'Innovation Lab',
+    attendees: 84,
+    color: 'bg-indigo-100 text-indigo-700',
+  },
+  {
+    id: 2,
+    title: 'AI & Machine Learning Workshop',
+    category: 'Workshop',
+    date: 'NOV 08',
+    time: '11:00 AM',
+    location: 'Seminar Hall',
+    attendees: 56,
+    color: 'bg-emerald-100 text-emerald-700',
+  },
+  {
+    id: 3,
+    title: 'Student Club Meetup',
+    category: 'Community',
+    date: 'NOV 12',
+    time: '2:00 PM',
+    location: 'Student Activity Center',
+    attendees: 42,
+    color: 'bg-amber-100 text-amber-700',
+  },
+]

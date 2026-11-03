@@ -1,0 +1,17 @@
+{
+  "name": "campusloop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CampusLoop campus community app",
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "predev": "node scripts/ensure-dependencies.js",
+    "dev": "node scripts/dev.js",
+    "build": "npm run build --prefix frontend",
+    "lint": "npm run lint --prefix frontend"
+  }
+}

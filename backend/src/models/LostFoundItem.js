@@ -1,0 +1,3 @@
+import mongoose from 'mongoose'
+const lostFoundSchema = new mongoose.Schema({ userId: { type: String, required: true, index: true }, reporter: { type: String, default: 'Student' }, title: { type: String, required: true, trim: true, maxlength: 120 }, description: { type: String, required: true, trim: true, maxlength: 2000 }, location: { type: String, required: true, trim: true }, kind: { type: String, enum: ['Lost', 'Found'], default: 'Lost' }, status: { type: String, enum: ['Open', 'Resolved'], default: 'Open' } }, { timestamps: true })
+export default mongoose.models.LostFoundItem || mongoose.model('LostFoundItem', lostFoundSchema)
